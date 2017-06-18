@@ -106,14 +106,14 @@ namespace Droid_Translate
         }
         private void Translate()
         {
-            button1.Enabled = false;
-            Cursor = Cursors.WaitCursor;
-            string ret = Droid_web.Web.TrimPage(string.Format(_url, comboBoxLang.Text.ToUpper(), textBoxIn.Text), "<table class=\"traductions\">", "</table>");
-            webBrowser1.DocumentText = ret;
-            button1.Enabled = true;
-            Cursor = Cursors.Arrow;
+            //button1.Enabled = false;
+            //Cursor = Cursors.WaitCursor;
+            //string ret = Droid_web.Web.TrimPage(string.Format(_url, comboBoxLang.Text.ToUpper(), textBoxIn.Text), "<table class=\"traductions\">", "</table>");
+            //webBrowser1.DocumentText = ret;
+            //button1.Enabled = true;
+            //Cursor = Cursors.Arrow;
             
-            textBoxIn.Clear();
+            //textBoxIn.Clear();
         }
         private void CheckDll()
         {

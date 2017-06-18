@@ -473,9 +473,9 @@ namespace Droid_communication
             // imageListTheme
             // 
             this.imageListTheme.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListTheme.Images.Add("white", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_jaune);
-            this.imageListTheme.Images.Add("yellow", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_jaune);
-            this.imageListTheme.Images.Add("orange", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_violet);
+            this.imageListTheme.Images.Add("white", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_yellow);
+            this.imageListTheme.Images.Add("yellow", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_yellow);
+            this.imageListTheme.Images.Add("orange", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_purple);
             this.imageListTheme.Images.Add("red", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_red);
             this.imageListTheme.Images.Add("green", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_green);
             this.imageListTheme.Images.Add("blue", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_blue);
@@ -487,8 +487,8 @@ namespace Droid_communication
             // imageListMap
             // 
             this.imageListMap.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListMap.Images.Add("black", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_violet);
-            this.imageListMap.Images.Add("white", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_jaune);
+            this.imageListMap.Images.Add("black", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_purple);
+            this.imageListMap.Images.Add("white", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_yellow);
             this.imageListMap.Images.Add("black2", Tools4Libraries.Resources.ResourceIconSet16Default.bullet_red);
             // 
             // pictureBox4
