@@ -6,7 +6,7 @@ namespace Droid_communication
     public partial class SlackDemo : Form
     {
         #region Attribute
-        private SlackInterface _slackInt;
+        private Interface_slack _slackInt;
         private System.ComponentModel.IContainer components = null;
 
         private string _url = Tools4Libraries.Params.CommunicationSlackUrl;
@@ -29,7 +29,7 @@ namespace Droid_communication
         public SlackDemo()
         {
             InitializeComponent();
-            _slackInt = new SlackInterface(string.Format(_url, _topic, _token));
+            _slackInt = new Interface_slack(string.Format(_url, _topic, _token));
             _slackInt.PostMessage("Hello, c'est Tobi, je m'entraine pour le moment mais je reviendrais vous aider plus tard. :D", "amostrack", "#general");
         }
         #endregion

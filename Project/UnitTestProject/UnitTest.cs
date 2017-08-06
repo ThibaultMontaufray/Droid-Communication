@@ -70,7 +70,7 @@ namespace UnitTestProject
         {
             try
             {
-                SlackInterface slack = new SlackInterface("");
+                Interface_slack slack = new Interface_slack("");
                 slack.PostMessage("je suis une mouette");
                 Assert.IsTrue(true);
             }

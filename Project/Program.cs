@@ -25,8 +25,9 @@ namespace Droid_communication
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new SlackDemo());
-            Application.Run(new DemoOutlook());
+            //Application.Run(new DemoOutlook());
             //Application.Run(new DemoLync());
+            Application.Run(new Droid_Communicator());
         }
     }
 }

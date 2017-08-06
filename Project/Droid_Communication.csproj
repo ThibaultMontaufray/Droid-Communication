@@ -7,7 +7,7 @@
     <ProjectGuid>{F584B1BA-503A-483A-A17B-626AC1554A25}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Assistant</RootNamespace>
+    <RootNamespace>Droid_communication</RootNamespace>
     <AssemblyName>Droid_communication</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -110,6 +110,10 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.Ribbon, Version=3.5.8.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\officeribbon.3.5.8.4\lib\net20\System.Windows.Forms.Ribbon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
@@ -128,6 +132,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComSlack\PanelSlack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI\Droid_Communicator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Droid_Communicator.Designer.cs">
+      <DependentUpon>Droid_Communicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GetText.cs" />
+    <Compile Include="Properties\ResourceEnglish.Designer.cs">
+      <DependentUpon>ResourceEnglish.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\ResourceFrench.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceFrench.resx</DependentUpon>
+    </Compile>
     <Compile Include="Translator\TranslateFrenchTunisian.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +234,17 @@
     <EmbeddedResource Include="ComOutlook\View\MailUserSearch.resx">
       <DependentUpon>MailUserSearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Droid_Communicator.resx">
+      <DependentUpon>Droid_Communicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ResourceEnglish.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceEnglish.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\ResourceFrench.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceFrench.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Service\TS_Communication.resx">
       <DependentUpon>TS_Communication.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +259,7 @@
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -6,8 +6,9 @@ using System.Text;
 
 namespace Droid_communication
 {
-    public class SlackInterface
+    public class Interface_slack
     {
+        #region Attributes
         private Uri _uri;
         private Encoding _encoding = new UTF8Encoding();
         private string _proxyHost = "";
@@ -15,11 +16,40 @@ namespace Droid_communication
         private string _proxyPassword = "";
         private int _proxyPort = 8080;
 
-        public SlackInterface(string urlWithAccessToken)
+        private string _clientId;
+        private string _clientSecret;
+
+        private PanelSlack _panelSlack;
+        #endregion
+
+        #region Properties
+        public PanelSlack Panel
+        {
+            get { return _panelSlack; }
+            set { _panelSlack = value; }
+        }
+        public string ClientId
+        {
+            get { return _clientId; }
+            set { _clientId = value; }
+        }
+        public string ClientSecret
+        {
+            get { return _clientSecret; }
+            set { _clientSecret = value; }
+        }
+        #endregion
+
+        #region Constructor
+        public Interface_slack(string urlWithAccessToken = null)
         {
             _uri = new Uri(urlWithAccessToken);
-        }
 
+            Init();
+        }
+        #endregion
+
+        #region Methods public
         /// <summary>
         /// Post a message using simple strings
         /// </summary>
@@ -38,7 +68,6 @@ namespace Droid_communication
 
             PostMessage(payload);
         }
-
         /// <summary>
         /// Post a message using a Payload object
         /// </summary>
@@ -56,14 +85,22 @@ namespace Droid_communication
                 }
                 NameValueCollection data = new NameValueCollection();
                 data["payload"] = payloadJson;
-
-                client.Credentials = new NetworkCredential("29216308806.33597466784", "bc4a3e7d1df9ac28f4dbfc9ee2e0c909");
+                
+                client.Credentials = new NetworkCredential(_clientId, _clientSecret);
                 var response = client.UploadValues(_uri, "POST", data);
 
                 //The response text is usually "ok"
                 string responseText = _encoding.GetString(response);
             }
         }
+        #endregion
+
+        #region Methods private
+        private void Init()
+        {
+            _panelSlack = new PanelSlack(this);
+        }
+        #endregion
     }
 
     //This class serializes into the Json payload required by Slack Incoming WebHooks
