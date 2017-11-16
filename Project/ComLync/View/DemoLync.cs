@@ -3,7 +3,6 @@
     using System.Windows.Forms;
     using System;
     using System.Collections.Generic;
-    using System.Threading;
     using System.IO;
 
     public partial class DemoLync : Form
@@ -14,7 +13,7 @@
         private int _offsetY = 0;
         private LyncInterface _lynqInterface;
         private System.Windows.Forms.Timer _timer;
-        private bool _timerLaunched = false;
+        //private bool _timerLaunched = false;
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.PictureBox pictureBox1;

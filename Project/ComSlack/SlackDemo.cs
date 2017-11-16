@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
+using Tools4Libraries;
 
 namespace Droid_communication
 {
@@ -9,10 +10,10 @@ namespace Droid_communication
         private Interface_slack _slackInt;
         private System.ComponentModel.IContainer components = null;
 
-        private string _url = Tools4Libraries.Params.CommunicationSlackUrl;
-        private string _topic = Tools4Libraries.Params.CommunicationSlackTopic;
-        private string _account = Tools4Libraries.Params.CommunicationSlackAccount;
-        private string _token = Tools4Libraries.Params.CommunicationSlackToken;
+        private string _url = Params.CommunicationSlackUrl;
+        private string _topic = Params.CommunicationSlackTopic;
+        private string _account = Params.CommunicationSlackAccount;
+        private string _token = Params.CommunicationSlackToken;
         
         private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.Label label1;

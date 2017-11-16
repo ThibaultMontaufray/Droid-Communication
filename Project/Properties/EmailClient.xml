@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EmailClient>
+  <client name="office365">
+    <imap server="outlook.office365.com" port="993" encryption="SSL" />
+    <smtp server="smtp.office365.com" port="587" encryption="TLS" />
+  </client>
+  <client name="gmail">
+    <imap server="imap.gmail.com" port="993" encryption="SSL" />
+    <smtp server="smtp.gmail.com" port="465" encryption="SSL" />
+  </client>
+  <client name="yahoo">
+    <imap server="imap.mail.yahoo.com" port="993" encryption="SSL" />
+    <smtp server="smtp.mail.yahoo.com" port="465" encryption="SSL" />
+  </client>
+</EmailClient>

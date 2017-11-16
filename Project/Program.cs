@@ -27,7 +27,8 @@ namespace Droid_communication
             //Application.Run(new SlackDemo());
             //Application.Run(new DemoOutlook());
             //Application.Run(new DemoLync());
-            Application.Run(new Droid_Communicator());
+            Application.Run(new DemoMails());
+            //Application.Run(new Droid_Communicator());
         }
     }
 }

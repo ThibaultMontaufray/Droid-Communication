@@ -6,7 +6,7 @@ namespace Droid_Translate
     public partial class TranslateFrenchTunisian : Form
     {
         #region Attribute
-        private string _url = "http://www.arabetunisien.com/traduction/{0}/{1}";
+        //private string _url = "http://www.arabetunisien.com/traduction/{0}/{1}";
         
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.TextBox textBoxIn;

@@ -117,7 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Answer" xml:space="preserve">
+    <value>Répondre</value>
+  </data>
+  <data name="AnswerAll" xml:space="preserve">
+    <value>Répondre à tous</value>
+  </data>
+  <data name="Connection" xml:space="preserve">
+    <value>Connexion</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="DelMail" xml:space="preserve">
+    <value>Supprimer mail</value>
+  </data>
+  <data name="DirectMessage" xml:space="preserve">
+    <value>Message directe</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
   <data name="File" xml:space="preserve">
     <value>Fichier</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="NewElement" xml:space="preserve">
+    <value>Nouvel élément</value>
+  </data>
+  <data name="NewMail" xml:space="preserve">
+    <value>Nouveau mail</value>
+  </data>
+  <data name="NoConnection" xml:space="preserve">
+    <value>Hors ligne</value>
+  </data>
+  <data name="SendReceive" xml:space="preserve">
+    <value>Envoyer / Recevoir</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Outils</value>
+  </data>
+  <data name="Transfert" xml:space="preserve">
+    <value>Transférer</value>
+  </data>
+  <data name="Inbox" xml:space="preserve">
+    <value>Boite de réception</value>
+  </data>
+  <data name="Mailbox" xml:space="preserve">
+    <value>Messagerie</value>
+  </data>
+  <data name="Setting" xml:space="preserve">
+    <value>Paramètre</value>
   </data>
 </root>

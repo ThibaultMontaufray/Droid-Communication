@@ -3,6 +3,7 @@ using System;
 using System.Collections.Specialized;
 using System.Net;
 using System.Text;
+using Tools4Libraries;
 
 namespace Droid_communication
 {
@@ -58,7 +59,7 @@ namespace Droid_communication
         /// <param name="channel">the channel to post on</param>
         public void PostMessage(string text, string username = null, string channel = null)
         {
-            _proxyHost = Tools4Libraries.Params.WebProxyHost;
+            _proxyHost = Params.WebProxyHost;
             Payload payload = new Payload()
             {
                 Channel = channel,

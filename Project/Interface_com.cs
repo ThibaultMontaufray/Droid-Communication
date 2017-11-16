@@ -61,5 +61,12 @@ namespace Droid_communication
             }
         }
         #endregion
+
+        #region Methods public
+        public override void GoAction(string action)
+        {
+            throw new System.NotImplementedException();
+        }
+        #endregion
     }
 }
