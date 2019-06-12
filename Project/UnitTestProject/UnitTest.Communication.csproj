@@ -128,8 +128,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Droid.Communication.csproj">
-      <Project>{F584B1BA-503A-483A-A17B-626AC1554A25}</Project>
+    <ProjectReference Include="..\Droid.Communication.UI\Droid.Communication.UI.csproj">
+      <Project>{1a0ab8ba-a7b4-401a-a4b0-1ccb03662990}</Project>
+      <Name>Droid.Communication.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Droid.Communication\Droid.Communication.csproj">
+      <Project>{2243d862-377b-45f1-91fe-738d094f7e78}</Project>
       <Name>Droid.Communication</Name>
     </ProjectReference>
   </ItemGroup>

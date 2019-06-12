@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F584B1BA-503A-483A-A17B-626AC1554A25}</ProjectGuid>
+    <ProjectGuid>{1A0AB8BA-A7B4-401A-A4B0-1CCB03662990}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Droid.Communication</RootNamespace>
@@ -516,16 +516,16 @@
     <Compile Include="Modules\ComSlack\View\SlackConnection.Designer.cs">
       <DependentUpon>SlackConnection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
+    <Compile Include="Modules\Translator\TranslateFrenchEnglish.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modules\Translator\TranslateFrenchTunisian.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modules\Translator\TranslateFrenchEnglish.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Modules\ComOutlook\View\Actions.cs">
       <SubType>UserControl</SubType>
@@ -595,6 +595,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\ComFacebook\View\HexaFacebook.resx">
       <DependentUpon>HexaFacebook.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\ComLync\View\DemoLync.resx">
       <DependentUpon>DemoLync.cs</DependentUpon>
@@ -731,6 +732,10 @@
     <ProjectReference Include="..\..\Tools4Libraries\Tools4Libraries.csproj">
       <Project>{aad2b1be-9b2d-455d-8dd4-64e4e84dd985}</Project>
       <Name>Tools4Libraries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Droid.Communication\Droid.Communication.csproj">
+      <Project>{2243d862-377b-45f1-91fe-738d094f7e78}</Project>
+      <Name>Droid.Communication</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
