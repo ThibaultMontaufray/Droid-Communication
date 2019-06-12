@@ -670,7 +670,7 @@ namespace Droid.Communication
         }
         private void buttonChangeTheme_Click(object sender, EventArgs e)
         {
-            //_lynqInterface.SendMessage("Go", "cmathieu021615@im.socgen.com");
+            //_lynqInterface.SendMessage("Go", "cmathieu021615@im.toto.com");
             //ChangeColor();
         }
         #endregion
