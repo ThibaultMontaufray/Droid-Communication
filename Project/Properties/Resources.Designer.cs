@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Droid_communication.Properties {
+namespace Droid.Communication.Properties {
     using System;
     
     
@@ -19,7 +19,7 @@ namespace Droid_communication.Properties {
     // à l'aide d'un outil, tel que ResGen ou Visual Studio.
     // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
     // avec l'option /str ou régénérez votre projet VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -39,7 +39,7 @@ namespace Droid_communication.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Droid_communication.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Droid.Communication.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,23 +61,203 @@ namespace Droid_communication.Properties {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap background {
+            get {
+                object obj = ResourceManager.GetObject("background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap déçu {
+            get {
+                object obj = ResourceManager.GetObject("déçu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;EmailClient&gt;
         ///  &lt;client name=&quot;office365&quot;&gt;
-        ///    &lt;Imap server=&quot;outlook.office365.com&quot; port=&quot;993&quot; encryption=&quot;SSL&quot; /&gt;
+        ///    &lt;imap server=&quot;outlook.office365.com&quot; port=&quot;993&quot; encryption=&quot;SSL&quot; /&gt;
         ///    &lt;smtp server=&quot;smtp.office365.com&quot; port=&quot;587&quot; encryption=&quot;TLS&quot; /&gt;
         ///  &lt;/client&gt;
         ///  &lt;client name=&quot;gmail&quot;&gt;
-        ///    &lt;Imap server=&quot;imap.gmail.com&quot; port=&quot;&quot; encryption=&quot;&quot; /&gt;
-        ///    &lt;smtp server=&quot;&quot; port=&quot;&quot; encryption=&quot;&quot; /&gt;
+        ///    &lt;imap server=&quot;imap.gmail.com&quot; port=&quot;993&quot; encryption=&quot;SSL&quot; /&gt;
+        ///    &lt;smtp server=&quot;smtp.gmail.com&quot; port=&quot;465&quot; encryption=&quot;SSL&quot; /&gt;
         ///  &lt;/client&gt;
         ///  &lt;client name=&quot;yahoo&quot;&gt;
-        ///    &lt;Imap server=&quot;imap.mail.yahoo.com&quot; port=&quot;&quot; encryption=&quot;&quot; /&gt;
-        ///    &lt;smtp server=&quot;&quot; port=&quot;&quot; encryptio [le reste de la chaîne a été tronqué]&quot;;.
+        ///    &lt;imap server=&quot;imap.mail.yahoo.com&quot; port=&quot;993&quot; encryption=&quot;SSL&quot; /&gt;
+        ///    &lt; [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         internal static string EmailClient {
             get {
                 return ResourceManager.GetString("EmailClient", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grimacing {
+            get {
+                object obj = ResourceManager.GetObject("grimacing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grin {
+            get {
+                object obj = ResourceManager.GetObject("grin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grinning {
+            get {
+                object obj = ResourceManager.GetObject("grinning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hexagon_gray {
+            get {
+                object obj = ResourceManager.GetObject("hexagon_gray", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap innocent {
+            get {
+                object obj = ResourceManager.GetObject("innocent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap joy {
+            get {
+                object obj = ResourceManager.GetObject("joy", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ok_hand {
+            get {
+                object obj = ResourceManager.GetObject("ok_hand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pensive {
+            get {
+                object obj = ResourceManager.GetObject("pensive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ShieldTileBg {
+            get {
+                object obj = ResourceManager.GetObject("ShieldTileBg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap skull {
+            get {
+                object obj = ResourceManager.GetObject("skull", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap slack {
+            get {
+                object obj = ResourceManager.GetObject("slack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap slightly_smiling_face {
+            get {
+                object obj = ResourceManager.GetObject("slightly_smiling_face", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trollface {
+            get {
+                object obj = ResourceManager.GetObject("trollface", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wink {
+            get {
+                object obj = ResourceManager.GetObject("wink", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yeux_en_coeur {
+            get {
+                object obj = ResourceManager.GetObject("yeux_en_coeur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

@@ -1,4 +1,4 @@
-using Droid_communication;
+using Droid.Communication;
 using NUnit.Framework;
 using System;
 using System.Windows.Forms;
