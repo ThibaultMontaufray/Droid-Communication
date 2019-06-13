@@ -7,6 +7,7 @@ using Microsoft.Office.Interop.Outlook;
 using OutlookLib = Microsoft.Office.Interop.Outlook;
 using System.Drawing;
 using System.IO;
+using OutLook = Microsoft.Office.Interop.Outlook;
 
 namespace Droid.Communication
 {
@@ -21,7 +22,8 @@ namespace Droid.Communication
         private MAPIFolder _sentbox;
         private List<MailItem> _mailsSentBox;
         private NameSpace _namespace;
-        private OutlookLib.Application _outlook = Marshal.GetActiveObject("Outlook.Application") as OutlookLib.Application;
+        //private OutlookLib.Application _outlook = Marshal.GetActiveObject("Outlook.Application") as OutlookLib.Application;
+        private OutlookLib.Application _outlook = new OutLook.Application();
         private int _unread;
 
         private static OutlookInterface intOutlook;

@@ -61,7 +61,8 @@ namespace Droid.Communication
         }
         static EmailAdapter()
         {
-            LoadClientMailLibrary();
+            // TODO : change the empty by the real mail
+            LoadClientMailLibrary(string.Empty);
         }
         #endregion
 
@@ -177,14 +178,15 @@ namespace Droid.Communication
 
             LoadInbox();
         }
-        private static void LoadClientMailLibrary()
+        private static void LoadClientMailLibrary(string emailClient)
         {
             int port;
             ClientMail currentClient = null;
             _clientMail = new List<ClientMail>();
 
             XmlDocument doc = new XmlDocument();
-            doc.LoadXml(Properties.Resources.EmailClient);
+            //doc.LoadXml(Properties.Resources.EmailClient);
+            doc.LoadXml(emailClient);
             foreach (XmlNode node in doc.DocumentElement.ChildNodes)
             {
                 if (node.Name.Equals("client"))

@@ -12,12 +12,12 @@ namespace Droid.Communication
 {
     class SlackJsonConverter : JsonConverter
     {
-        private SlackRtm slackRtm;
+        //private SlackRtm slackRtm;
 
-        public SlackJsonConverter(SlackRtm slackRtm)
-        {
-            this.slackRtm = slackRtm;
-        }
+        //public SlackJsonConverter(SlackRtm slackRtm)
+        //{
+        //    this.slackRtm = slackRtm;
+        //}
         public override bool CanConvert(Type objectType)
         {
             if (objectType.Assembly == Assembly.GetExecutingAssembly())
@@ -33,8 +33,8 @@ namespace Droid.Communication
                 existingValue = Activator.CreateInstance(objectType, true);
             serializer.ContractResolver = new TrueCamelCasePropertyNamesContractResolver();
             serializer.Populate(reader, existingValue);
-            if (existingValue.GetType().GetProperty("SlackInstance") != null)
-                existingValue.GetType().GetProperty("SlackInstance").SetValue(existingValue, slackRtm, null);
+            //if (existingValue.GetType().GetProperty("SlackInstance") != null)
+            //    existingValue.GetType().GetProperty("SlackInstance").SetValue(existingValue, slackRtm, null);
 
             return existingValue;
         }

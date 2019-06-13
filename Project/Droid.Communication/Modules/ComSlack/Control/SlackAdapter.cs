@@ -19,7 +19,7 @@ namespace Droid.Communication
         private List<Token> _tokens;
         private Channel _currentChannel;
         private Team _team;
-        private SlackRtm _slackRtm;
+        //private SlackRtm _slackRtm;
         private Member _currentUser;
         #endregion
 
@@ -64,11 +64,11 @@ namespace Droid.Communication
             get { return _currentChannel; }
             set { _currentChannel = value; }
         }
-        public SlackRtm SlackRtm
-        {
-            get { return _slackRtm; }
-            set { _slackRtm = value; }
-        }
+        //public SlackRtm SlackRtm
+        //{
+        //    get { return _slackRtm; }
+        //    set { _slackRtm = value; }
+        //}
         public Member CurrentUser
         {
             get { return _currentUser; }
@@ -119,7 +119,7 @@ namespace Droid.Communication
         {
             if (_currentChannel != null)
             {
-                _slackRtm.SendMessage(_currentChannel, message, null);
+                //_slackRtm.SendMessage(_currentChannel, message, null);
             }
         }
         #endregion
@@ -138,30 +138,30 @@ namespace Droid.Communication
             _channels = new List<Channel>();
             _users = new List<Member>();
 
-            _slackRtm = new SlackRtm(this);
-            _slackRtm.OnEvent += Instance_OnEvent1;
-            _slackRtm.OnAck += Instance_OnAck;
+            //_slackRtm = new SlackRtm(this);
+            //_slackRtm.OnEvent += Instance_OnEvent1;
+            //_slackRtm.OnAck += Instance_OnAck;
 
             RefreshData();
         }
         private void InitRtm()
         {
-            if (_slackRtm != null)
-            {
-                _slackRtm.OnEvent -= Instance_OnEvent1;
-                _slackRtm.OnAck -= Instance_OnAck;
-            }
+            //if (_slackRtm != null)
+            //{
+            //    _slackRtm.OnEvent -= Instance_OnEvent1;
+            //    _slackRtm.OnAck -= Instance_OnAck;
+            //}
 
-            if (_token != null)
-            {
-                _slackRtm = new SlackRtm(this);
-                _slackRtm.OnEvent += Instance_OnEvent1;
-                _slackRtm.OnAck += Instance_OnAck;
-                if (!_slackRtm.Connect())
-                {
+            //if (_token != null)
+            //{
+            //    _slackRtm = new SlackRtm(this);
+            //    _slackRtm.OnEvent += Instance_OnEvent1;
+            //    _slackRtm.OnAck += Instance_OnAck;
+            //    if (!_slackRtm.Connect())
+            //    {
 
-                }
-            }
+            //    }
+            //}
         }
 
         private void ProcessEvent(SlackEventArgs eventArg)

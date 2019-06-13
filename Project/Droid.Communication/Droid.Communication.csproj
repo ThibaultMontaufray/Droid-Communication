@@ -1,33 +1,25 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>netcoreapp2.0;net461</TargetFrameworks>
+    <Version>1.0.4</Version>
+    <Authors>Thibault MONTAUFRAY</Authors>
+    <Company>Servodroid</Company>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/ThibaultMontaufray/Tools4Libraries/master/License</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/ThibaultMontaufray/Manager-Communication</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/ThibaultMontaufray/Tools4Libraries/master/ManagersDevComponents/servodroidIconColor.png</PackageIconUrl>
+    <PackageReleaseNotes>Let's allow your api makes some communications. In this version you got Outlook, Lync and Slack. Don't hesitate to propose us more modules !</PackageReleaseNotes>
+    <PackageTags>Servodroid communication outlook lync slack</PackageTags>
+    <Copyright>Copyright 2015</Copyright>
+    <Configurations>Debug;Release;netcore</Configurations>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.4</AssemblyVersion>
+    <FileVersion>1.0.4</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Modules\ComLync\Lib\Microsoft.Lync.Controls.dll" />
-    <None Remove="Modules\ComLync\Lib\Microsoft.Lync.Controls.Framework.dll" />
-    <None Remove="Modules\ComLync\Lib\Microsoft.Lync.Model.dll" />
-    <None Remove="Modules\ComLync\Lib\Microsoft.Lync.Utilities.dll" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Modules\ComLync\Lib\Microsoft.Lync.Controls.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ComLync\Lib\Microsoft.Lync.Controls.Framework.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ComLync\Lib\Microsoft.Lync.Model.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modules\ComLync\Lib\Microsoft.Lync.Utilities.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Droid.Web" Version="1.0.7" />
+    <PackageReference Include="LyncSDK.AsyncExtensions" Version="1.0.1" />
     <PackageReference Include="MailKit" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.1" />
     <PackageReference Include="Microsoft.Office.Interop.Outlook" Version="15.0.4797.1003" />
@@ -35,21 +27,6 @@
     <PackageReference Include="SimpleFacebookClient" Version="1.2.0" />
     <PackageReference Include="TidePod.Microsoft.Lync" Version="15.0.4603.1000" />
     <PackageReference Include="Tools4Libraries" Version="1.0.21" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Modules\ComMail\ResourceImap.Designer.cs">
-      <DependentUpon>ResourceImap.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Modules\ComMail\ResourceImap.resx">
-      <LastGenOutput>ResourceImap.Designer.cs</LastGenOutput>
-      <Generator>ResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

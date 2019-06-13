@@ -16,11 +16,11 @@ namespace Droid.Communication
         #region Methods public
         public static Event NewEvent(string Json)
         {
-            return JsonConvert.DeserializeObject<Event>(Json, new SlackJsonConverter(null));
+            return JsonConvert.DeserializeObject<Event>(Json, new SlackJsonConverter());
         }
         public string ToJson()
         {
-            return JsonConvert.SerializeObject(this, new SlackJsonConverter(null));
+            return JsonConvert.SerializeObject(this, new SlackJsonConverter());
         }
         #endregion
     }

@@ -31,7 +31,7 @@ namespace UnitTestProject
         {
             try
             {
-                DemoOutlook deou = new DemoOutlook();
+                //DemoOutlook deou = new DemoOutlook();
                 Assert.IsTrue(true);
             }
             catch (Exception exp)
@@ -70,8 +70,8 @@ namespace UnitTestProject
         {
             try
             {
-                Interface_slack slack = new Interface_slack("");
-                slack.PostMessage("je suis une mouette");
+                //Interface_slack slack = new Interface_slack("");
+                //slack.PostMessage("je suis une mouette");
                 Assert.IsTrue(true);
             }
             catch (Exception exp)
@@ -84,7 +84,7 @@ namespace UnitTestProject
         {
             try
             {
-                SlackDemo sd = new SlackDemo();
+                //SlackDemo sd = new SlackDemo();
                 Assert.IsTrue(true);
             }
             catch (Exception exp)
