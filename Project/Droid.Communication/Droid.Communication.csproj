@@ -23,7 +23,7 @@
     <PackageReference Include="MailKit" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.1" />
     <PackageReference Include="Microsoft.Office.Interop.Outlook" Version="15.0.4797.1003" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="SimpleFacebookClient" Version="1.2.0" />
     <PackageReference Include="TidePod.Microsoft.Lync" Version="15.0.4603.1000" />
     <PackageReference Include="Tools4Libraries" Version="1.0.21" />
